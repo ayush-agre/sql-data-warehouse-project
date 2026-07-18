@@ -171,7 +171,7 @@ BEGIN
          ELSE cid
     END cid,
     CASE WHEN bdate > GETDATE() THEN NULL 
-         ELSE GETDATE()
+         ELSE bdate
     END bdate,
     CASE WHEN UPPER(TRIM(gen)) = 'F' THEN 'FEMALE' 
          WHEN UPPER(TRIM(gen)) = 'M' THEN 'MALE'
